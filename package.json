@@ -1,0 +1,27 @@
+{
+  "name": "ethereum",
+  "version": "1.0.0",
+  "description": "Ethereum Bootcamp By alchemy university.",
+  "main": "index.js",
+  "author": "siva padmanaban",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/app.js",
+    "dev": "ts-node ./src/app.ts",
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'src/tests/**/*.ts'"
+  },
+  "dependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.1.7",
+    "chai": "^4.3.7",
+    "ethereum-cryptography": "^2.0.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
